@@ -6,6 +6,7 @@
 
 .navbar {
   padding: 0;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .dropdown-item {
@@ -17,9 +18,13 @@
   color: white;
 }
 
+.navbar-nav {
+  opacity: 70%;
+}
+
 html {
   font-size: 14pt;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Times New Roman";
 }
 
 body {
@@ -27,6 +32,9 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 0;
+  background-image: url("../assets/negative-space-black-forest-dawn.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 header {
@@ -42,9 +50,22 @@ header {
 .container__mainpage {
   height: 100vh;
   width: 100vw;
-  background-image: url("../assets/negative-space-black-forest-dawn.jpg");
-  background-position: center;
-  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container__mainpage .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  margin-top: -250px;
+}
+.container__mainpage .text-container h1, .container__mainpage .text-container h2 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 50px;
 }
 .container__aboutpage {
   background-color: green;

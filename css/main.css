@@ -1,0 +1,59 @@
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar {
+  padding: 0;
+}
+
+.dropdown-item {
+  color: white;
+  font-family: "times new roman", arial;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+html {
+  font-size: 14pt;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+
+header {
+  width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container__mainpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../assets/negative-space-black-forest-dawn.jpg");
+  background-position: center;
+  background-size: cover;
+}
+.container__aboutpage {
+  background-color: green;
+  height: 100vh;
+  width: 100vw;
+}
+.container__contactpage {
+  background-color: orangered;
+  width: 100vw;
+}
+
+/*# sourceMappingURL=main.css.map */

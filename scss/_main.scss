@@ -1,0 +1,39 @@
+@use "navbar";
+
+html {
+  font-size: 14pt;
+  font-family: "Times New Roman", Times, serif;
+}
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  margin-left: 0;
+}
+header {
+  width: 100vw;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__mainpage {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../assets/negative-space-black-forest-dawn.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__aboutpage {
+    background-color: green;
+    height: 100vh;
+    width: 100vw;
+  }
+  &__contactpage {
+    background-color: orangered;
+    width: 100vw;
+  }
+}

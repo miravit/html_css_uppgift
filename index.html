@@ -21,74 +21,62 @@
     <title>Document</title>
   </head>
   <body>
+
+    <section class="top-nav">
+      <div>
+      </div>
+      <input id="menu-toggle" type="checkbox" />
+      <label class='menu-button-container' for="menu-toggle">
+      <div class='menu-button'></div>
+    </label>
+      <ul class="menu">
+        <li><a href="#">Hem</a> </li>
+        <li><a href="#">Om</a></li>
+        <li><a href="#">Kontakt</a></li>
+      </ul>
+    </section>
     
-    <div class="container">
-      <header>
-        <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid ">
-         <a class="navbar-brand" href="#"></a>
-         <button
-           class="navbar-toggler"
-           type="button"
-           data-bs-toggle="collapse"
-           data-bs-target="#navbarSupportedContent"
-           aria-controls="navbarSupportedContent"
-           aria-expanded="false"
-           aria-label="Toggle navigation"
-         >
-           <span class="navbar-toggler-icon "></span>
-         </button>
-         <div class="collapse navbar-collapse  " id="navbarSupportedContent">
-           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-             <li class="nav-item">
-               <li><a class="dropdown-item navbar-dark" href="#main">Hem</a></li>
-                 <li><a class="dropdown-item" href="#about">Om</a></li>
-                 <li><a class="dropdown-item" href="#contact">Kontakt</a></li>
-             </li>
-           </ul>
-         </div>
-     </nav>
-    </header>
-      <main class="mainpage" id="main">
-        
-     <div class="text-container">
-     <h1>Welcome to nature!</h1>
-     <h2>A journey through time and sheep</h2>
-     <h2>To see how...cotton...is mage, made I mean...</h2>
+    <main class="mainpage" id="main">   
+    <div class="text-container">
+      <h1>Welcome to nature!</h1>
+      <h2>A journey through time and sheep</h2>
+      <h2>To see how...cotton...is mage, made I mean...</h2>
     </div>
-    </div>
+    
     
   </main>
       <section class="aboutpage" id="about">
         <h2>Träffa laget</h2>
-        <section class="team_photo" id="rakib">
-          <p>Rakib</p>
-           <img  src="assets/profiles/Rakib_Square.png" alt="Bild på Rakib">
-           <article>
-             <p>Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
+        <div class ="team">
+        <section class="team__container" id="rakib">
+          <p class="team_member">Rakib</p>
+           <img class="team__photo" src="assets/profiles/Rakib_Square.png" alt="Bild på Rakib">
+           <article class="team__textcontainer">
+             <p class="team__text">Rakib är vår vassaste node-utvecklare och håller ständigt ett öga på nya tekniker</p>
           </article>
           </section>
-        <section class="team_photo" id="alexandra">
-          <p>Alexandra</p>
-          <img  src="assets/profiles/Alexandra_Square.png" alt="Bild på Alexandra">
-          <article>
-            <p>Alexandra håller reda på alla och ser till att det flyter</p>
+        <section class="team__container" id="alexandra">
+          <p class="team_member">Alexandra</p>
+          <img class="team__photo" src="assets/profiles/Alexandra_Square.png" alt="Bild på Alexandra">
+          <article class="team__textcontainer">
+            <p class="team__text">Alexandra håller reda på alla och ser till att det flyter</p>
           </article>
         </section>
-        <section class="team_photo" id="lasse">
-          <p>Lasse</p>
-          <img  src="assets/profiles/NoPerson_Square.png" alt="Saknar bild">
-        <article>?
-          <p>Gör övriga saker...mestadels</p>
+        <section class="team__container" id="lasse">
+          <p class="team_member">Lasse</p>
+          <img class="team__photo" src="assets/profiles/NoPerson_Square.png" alt="Saknar bild">
+        <article class="team__textcontainer">
+          <p class="team__text">Gör övriga saker...mestadels</p>
         </article>
       </section>
-        <section class="team_photo" id="sebastian">
-          <p>Sebastian</p>
-           <img  src="assets/profiles/Sebastian_Square.png" alt="Bild på Sebastian">
-           <article>
-             <p>En av våra utbildare som har stor erfarenhet av ganska många saker</p>
+        <section class="team__container" id="sebastian">
+          <p class="team_member">Sebastian</p>
+           <img class="team__photo"src="assets/profiles/Sebastian_Square.png" alt="Bild på Sebastian">
+           <article class="team__textcontainer">
+             <p class="team__text">En av våra utbildare som har stor erfarenhet av ganska många saker</p>
             </article>
           </section>
+        </div>
       </section>
 
       <footer class="contactpage" id="contact"><span>Tegel Consulting AB </span><span>Agatvägen 18 </span><span>168 60 Bromma </span><p></p><p></p><span>info at tegelconsulting.se</span><span>070-123 456 78</span><p></p><p></p><span>Instagram</span><span>Twitter</span><span>Facebook</span></footer>

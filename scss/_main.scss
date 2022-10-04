@@ -59,6 +59,11 @@ html {
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 50px;
           }
+          .arrow {
+            font-size: 25px;
+            color: white;
+            margin-top: 300px
+          }
     }
 
     .aboutpage {
@@ -89,7 +94,8 @@ html {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;      
+        flex-wrap: wrap;   
+           
       }
       &__container {
         margin-bottom: 30px;
@@ -97,8 +103,9 @@ html {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin: 70px;
 
-       
+        
 
        
       }
@@ -109,6 +116,10 @@ html {
             border-radius: 50%;
             box-shadow: 0px 7px 30px rgba($color: #000000, $alpha: 0.7);
             margin: 20px;
+
+            @include mixins.desktop{
+              height: 300px;
+            }
           }
 
           &__text {
@@ -125,8 +136,9 @@ html {
             height: 150px;
             border-radius: 3%;
             padding: 10%;
+            
             @include mixins.desktop{
-              width: 40vw;
+              width: 500px;
              
               }
           }
@@ -144,6 +156,11 @@ html {
             background-color: black;
             color: var.$primary;
             //width: 100vw;
+
+            @include mixins.desktop{
+              flex-direction: row;
+                
+          }
 
             ul {
               list-style: none;

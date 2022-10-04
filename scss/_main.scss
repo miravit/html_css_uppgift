@@ -1,5 +1,6 @@
 @use "navbar";
 @use "variables" as var;
+@use "mixins";
 
 html {
     font-size: 14pt;
@@ -11,25 +12,35 @@ html {
     display: flex;
     flex-direction: column;
     margin-left: 0;
+    font-family:'Times New Roman', Times, serif;
+
+  
+  }
+  .background-container {
     background-image: url("../assets/negative-space-black-forest-dawn.jpg");
       background-position: center;
       background-size: cover;
-      font-family:'Times New Roman', Times, serif;
+      text-align: center;
   }
 
-  header {
-    width: 100vw;
-  }
   .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @include mixins.desktop{
+        flex-direction: row;
+          
+    }
+    
+
+ 
   }
 
     .mainpage {
         height: 100vh;
-        width: 100vw;
+        //width: 100vw;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,7 +54,7 @@ html {
         padding: 40px;
         margin-top: 150px;
 
-        h1 , h2 {
+        h1 , h3 {
             color: var.$primary;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 50px;
@@ -56,22 +67,42 @@ html {
         flex-direction: column;
         justify-content: center;
         background-color: var.$primary;
-        width: 100vw;
-    }
+        //width: 100vw;
 
-    h2 {
-        margin-top: 40px;
-        margin-bottom: 40px;
+       
+        
+    }
+    h1{
+    font-weight: bold;
+    font-size: 1.5rem;
+    }
+  
+      .text-container p {
+        color: white;
+        font-size: 1.3rem;
+
       }
 
      .team {
+       
+      @include mixins.desktop{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;      
+      }
       &__container {
         margin-bottom: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+       
+
+       
       }
+
 
         &__photo {
             height: 250px;
@@ -94,7 +125,12 @@ html {
             height: 150px;
             border-radius: 3%;
             padding: 10%;
+            @include mixins.desktop{
+              width: 40vw;
+             
+              }
           }
+         
         }
 
         .contactpage {
@@ -107,5 +143,9 @@ html {
             padding-left: 120px;
             background-color: black;
             color: var.$primary;
-            width: 100vw;
+            //width: 100vw;
+
+            ul {
+              list-style: none;
+            }
           }

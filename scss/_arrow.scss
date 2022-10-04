@@ -1,0 +1,9 @@
+.arrow {
+    color: white;
+    margin-top: 300px;
+}
+
+.arrow--black {
+    @extend.arrow;
+    color: black;
+}

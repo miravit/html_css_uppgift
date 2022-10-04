@@ -1,6 +1,7 @@
 @use "navbar";
 @use "variables" as var;
 @use "mixins";
+@use "arrow";
 
 html {
     font-size: 14pt;
@@ -59,11 +60,7 @@ html {
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 50px;
           }
-          .arrow {
-            font-size: 25px;
-            color: white;
-            margin-top: 300px
-          }
+          
     }
 
     .aboutpage {
@@ -72,12 +69,11 @@ html {
         flex-direction: column;
         justify-content: center;
         background-color: var.$primary;
-        //width: 100vw;
-
-       
+        //width: 100vw; 
         
     }
-    h1{
+    
+    h1 {
     font-weight: bold;
     font-size: 1.5rem;
     }

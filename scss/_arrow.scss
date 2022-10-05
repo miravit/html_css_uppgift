@@ -1,6 +1,13 @@
+@use "mixins";
+
 .arrow {
     color: white;
     margin-top: 300px;
+
+    @include mixins.desktop{
+       margin-top: 200px;
+       
+        }
 }
 
 .arrow--black {

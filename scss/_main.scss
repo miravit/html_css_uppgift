@@ -47,6 +47,11 @@ html {
         justify-content: center;
         align-items: center;
 
+        @include mixins.desktop{
+          height: 95vh;
+         
+          }
+
     }
     .text-container {
         display: flex;
@@ -55,16 +60,23 @@ html {
         flex-direction: column;
         padding: 40px;
         margin-top: 150px;
+
+        @include mixins.desktop{
+          margin-top: 300px;
+        }
         
 
-        h1 , h3 {
+        h1  {
             color: var.$primary;
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 50px;
-          }
-          h1 {
             font-weight: bold;
             font-size: 1.5rem;
+            }
+        
+            p {
+              color: var.$primary;
+      
             }
           
     }
@@ -86,10 +98,7 @@ html {
     margin-bottom: 40px;
   }
   
-      .text-container p {
-        color: white;
-
-      }
+  
 
      .team {
        
@@ -97,7 +106,10 @@ html {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        flex-wrap: wrap;   
+        flex-wrap: wrap;
+        justify-content: center;
+       
+        
            
       }
       &__container {
@@ -106,6 +118,13 @@ html {
         justify-content: center;
         align-items: center;
         flex-direction: column;
+       
+        @include mixins.desktop{
+         width: 580px;
+         
+          
+             
+        }
        
       }
     
@@ -125,6 +144,7 @@ html {
             margin-bottom: 10px;
             line-height: 1;
             font-size: 0.9rem;
+            padding-bottom: 20px;
   
           }
         

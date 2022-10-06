@@ -41,7 +41,7 @@ html {
   }
 
     .mainpage {
-        height: 95vh;
+        height: 92vh;
         //width: 100vw;
         display: flex;
         justify-content: center;
@@ -59,7 +59,7 @@ html {
         align-items: center;
         flex-direction: column;
         padding: 40px;
-        margin-top: 300px;
+        margin-top: 250px;
         margin-bottom: 80px;
 
         @include mixins.desktop{
@@ -70,15 +70,17 @@ html {
         h1  {
             color: var.$primary;
             font-family: 'Times New Roman', Times, serif;
-            margin-bottom: 50px;
+            margin-bottom: 20px;
             font-weight: bold;
             font-size: 1.8rem;
             }
         
             p {
               color: var.$primary;
-              font-size: 1.5rem;
-              margin-bottom: 45px;
+              font-size: 1.3rem;
+              margin-top: 30px;
+              
+              
              
       
               @include mixins.desktop{
@@ -126,12 +128,9 @@ html {
         flex-direction: column;
        
         @include mixins.desktop{
-         width: 30%;
-         margin: 6%;
-         
-         
-         
-          
+         width: 33%;
+         margin-left: 55px;
+         margin-right: 55px;
              
         }
        
@@ -142,9 +141,10 @@ html {
             border-radius: 50%;
             box-shadow: 0px 7px 30px rgba($color: #000000, $alpha: 0.7);
             margin: 20px;
+            margin-top: -10px;
 
             @include mixins.desktop{
-              height: 300px;
+              height: 350px;
             }
           }
 
@@ -152,7 +152,7 @@ html {
             margin-top: 10px ;
             margin-bottom: 10px;
             line-height: 1;
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             padding-bottom: 20px;
   
           }
@@ -162,12 +162,12 @@ html {
             align-items: center;
             background-color: lightgray;
             width: 80vw;
-            height: 120px;
+            height: 140px;
             border-radius: 3%;
-            padding: 10%;
+            padding: 14%;
             
             @include mixins.desktop{
-              width: 450px;
+              width: auto;
              
               }
           }
@@ -192,7 +192,7 @@ html {
 
             @include mixins.desktop{
               flex-direction: row;
-              align-items: center;
+              
               justify-content: space-evenly;
               padding-top: 2% ;
               padding-bottom:4% ;

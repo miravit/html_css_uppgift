@@ -1,20 +1,22 @@
+@use "variables" as var;
+
 .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;  
-  color: #FFF;
+  color: var.$primary;
   height: 50px;
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.2);
 }
 a {
-  color: white;
+  color: var.$primary;
   text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
-  color: white;
+  color: var.$primary;
 }
 
 .menu {
@@ -52,7 +54,7 @@ a:hover {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var.$primary;
   position: absolute;
   height: 4px;
   width: 30px;
@@ -123,7 +125,7 @@ a:hover {
     justify-content: center;
     margin: 0;
     width: 100%;
-    color: white;
+    color: var.$primary;
     
   }
 

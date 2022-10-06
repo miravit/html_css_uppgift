@@ -41,7 +41,7 @@ html {
   }
 
     .mainpage {
-        height: 90vh;
+        height: 95vh;
         //width: 100vw;
         display: flex;
         justify-content: center;
@@ -59,7 +59,8 @@ html {
         align-items: center;
         flex-direction: column;
         padding: 40px;
-        margin-top: 150px;
+        margin-top: 300px;
+        margin-bottom: 80px;
 
         @include mixins.desktop{
           margin-top: 300px;
@@ -71,12 +72,18 @@ html {
             font-family: 'Times New Roman', Times, serif;
             margin-bottom: 50px;
             font-weight: bold;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             }
         
             p {
               color: var.$primary;
+              font-size: 1.5rem;
+              margin-bottom: 45px;
+             
       
+              @include mixins.desktop{
+                margin-bottom: 45px;
+              }
             }
           
     }
@@ -88,7 +95,6 @@ html {
         flex-direction: column;
         justify-content: center;
         background-color: var.$primary;
-        //width: 100vw; 
         
     }
     
@@ -120,7 +126,10 @@ html {
         flex-direction: column;
        
         @include mixins.desktop{
-         width: 580px;
+         width: 30%;
+         margin: 6%;
+         
+         
          
           
              
@@ -179,22 +188,27 @@ html {
             padding-bottom:10% ;
             background-color: black;
             color: var.$primary;
-            //width: 100vw;
+            
 
             @include mixins.desktop{
               flex-direction: row;
               align-items: center;
-              height: 30vh;
+              justify-content: space-evenly;
+              padding-top: 2% ;
+              padding-bottom:4% ;
+              padding-left: 0;
                 
           }
 
             ul {
               list-style: none;
+              
 
               @include mixins.desktop{
-              padding-left: 10%;
+              
             
                   
             }
             }
+           
           }

@@ -2,7 +2,8 @@
 
 .arrow {
     color: white;
-    margin-top: 300px;
+    margin-top: 90px;
+    
 
     @include mixins.desktop{
        margin-top: 200px;
